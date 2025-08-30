@@ -73,9 +73,6 @@ def friendGame(pelaaja1, pelaaja2):
 #end of friendGame
 
 def getWinner(pelaaja1, pelaaja2):
-    print(pelaaja1, pelaaja2)
-    print(voittotaulukko[pelaaja1][1])
-
     if not pelaaja1 == pelaaja2:
         #tässä vähä mustaa magiaa
         if not voittotaulukko[pelaaja1][1] == pelaaja2:
@@ -84,7 +81,7 @@ def getWinner(pelaaja1, pelaaja2):
             return "Pelaaja 1"
     else:
         return "tasapeli"
-
+#end of getWinner
 
 #käynnistetään ohjelma lopussa, niin kerkee ladata kaikki functiot ja toimmii kivemmi.
 setupGame()
